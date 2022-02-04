@@ -1,16 +1,10 @@
 <?php
-require_once('./padre/Animal.php');
+require('./padre/Animal.php');
 class Perro extends Animal
 {
   public function comer()
   {
-    return "<p>Perro comiendo huesos</p>";
-  }
-
-
-  public function abrirProtected()
-  {
-    $this->dormir();
+    echo "<p>Perro comiendo</p>";
   }
 
 }
